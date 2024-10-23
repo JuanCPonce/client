@@ -7,6 +7,8 @@ const CreateWorkout = () => {
     const [exercises, setExercises] = useState([{ name: '', sets: '', reps: '', weight: '' }]);
     const navigate = useNavigate();
 
+    console.log("CreateWorkout");
+
     const handleInputChange = (index, event) => {
         const values = [...exercises];
         values[index][event.target.name] = event.target.value;

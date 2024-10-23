@@ -6,6 +6,7 @@ const WorkoutList = () => {
     const [workouts, setWorkouts] = useState([]);
 
     useEffect(() => {
+        console.log("workout list!");
         fetchWorkouts();
     }, []);
 
